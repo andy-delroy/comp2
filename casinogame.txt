@@ -1,0 +1,51 @@
+New Casino Game
+Time limit: 3000 ms
+Memory limit: 256 MB
+
+The casinos in Las Vegas feel like people are not coming as much as they used to; they have a theory that it's because their games have gone stale. They have had the same games since forever! So they have come up with a new one.
+
+This game is played on a N×NN×N square board, where each tile is colored white or black as in chess, such that the most common color on the board is white.
+
+A player can come up and bet on the game; after that, NN pieces will be put at random on the board, such that no two pieces are on the same row or column. The player will get 1 dollar for each piece that is on a black tile and will lose a dollar for each piece that is on a white tile.
+
+The casino has hired you to help them figure out what the expected amount of dollars they'll win is.
+
+Standard input
+
+In the first line, a number TT, the number of cases you'll answer.
+
+On the next TT lines, a number NN, representing the size of the square board.
+
+The first line of input contains an integer NN, the size of the chess board.
+
+Standard output
+
+Print TT lines. On each one, an integer, the expected number of dollars the casino will have to pay to a player, taken modulo 998244353998244353 (the answer can always be represented as an irreducible fraction a/ba/b, where bmod  998244353≠0bmod998244353=0. You have to print a⋅b−1mod  998244353a⋅b−1mod998244353).
+
+Constraints and notes
+
+    1≤T≤101≤T≤10.
+    1≤N≤1061≤N≤106. 
+
+Input	Output	Explanation
+
+3
+5
+2
+1
+
+	
+
+1247652
+0
+1
+
+	
+
+For the second test case, N=2N=2 so there are two possible scenarios:
+
+Where X is a chosen cell for the bet and . is an empty cell.
+
+It's easy to notice that The first scenario gives an income of 22 while the second one gives a loss of 22. Since the sum of both scenarios is 00, the answer is 02=020​=0.
+
+For the third test case, N=1N=1 so there is only one possible scenario with only a black cell, so the expected amount is 1111​
